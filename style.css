@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Honk&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+
+/*!FIRST PAGE STARTS HERE */
+#first_page{
+    height: 100vh;
+    width: 100vw;
+    /* border: 10px solid black; */
+    background-image: url("https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExODhuNG4wbjVoMWEyY2VudjgyMWN3bWlyNmpmbGtrcDQyOWtkbzViOSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/g9582DNuQppxC/giphy.gif");
+    /* background-image: url("./Assets/background-image.jpg"); */
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+nav{
+    /* border: 2px solid red; */
+    display: flex;
+    height: 20vh;
+}
+#nav_one{
+    /* border: 2px solid blue; */
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#logo{
+    height: 150px;
+    /* width:240px; */
+    width: 180px;
+    /* border: 2px solid black; */
+}
+#nav_two{
+    /* border: 2px solid red; */
+    flex-basis: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-weight: 550;
+}
+#nav_three{
+    /* border: 2px solid red; */
+    flex-basis: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 35px;
+    gap: 43px;
+}
+.fa-cart-shopping{
+    color: white;
+    font-size: 20px;
+}
+#cart_items{
+    background-color: white;
+    color: black;
+    height: 18px;
+    width: 18px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    top: 37px;
+    left: 105px;
+    font-weight: 550;
+}
+#price{
+    /* border: 2px solid red; */
+    color: white;
+    font-size: 19px;
+    letter-spacing: 1.5px;
+    font-weight: 550;
+}
+
+/* !SECOND PAGE STARTS HERE */
+#second_page{
+  height: 100vh;
+  width: 100vw;
+  /* border: 10px solid black; */
+}
+#article_one{
+  /* border: 2px solid red; */
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+#menu{
+  font-family: "Dancing Script", cursive;
+  font-size: 70px;
+  color: #eb4205;
+}
+#article_two{
+  /* border: 2px solid red; */
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card_container{
+  height: 390px;
+  width: 290px;
+  /* border: 2px solid black; */
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 3px;
+  padding: 0px 15px;
+}
+.food_img{
+  height: 50%;
+  scale: 0.8;
+  transition: all 0.2s 0s ease;
+}
+.food_img:hover{
+  scale: 1.08;
+}
+.food_title{
+  font-size: 20px;
+}
+.food_desc{
+  font-size: 16px;
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+}
+.price_items{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0px 10px;
+}
+.food_price{
+  font-weight: 550;
+  font-style: italic;
+  font-size: 17.5px;
+}
+.fa-indian-rupee-sign{
+    font-size: 16px;
+}
+.food_quantity{
+    font-size: 18px;
+    font-weight: 550;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-minus,.fa-plus{
+    border: 1px solid black;
+    font-size: 10px;
+    padding: 4px;
+    border-radius: 50%;
+    color: white;
+    background-color: black;
+    margin: 0px 10px;
+}
+/* @THIRD PAGE STARTS HERE */
+#menu_one,#menu_two,#menu_three,#menu_four{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 50px;
+}
+/* #FOURTH PAGE IS HERE */
+#fourth_page{
+    /* border: 5px solid red; */
+    height: 100vh;
+    width: 100vw;
+}
+#fourth_one{
+    /* border: 2px solid red; */
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#fourth_one>h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 75px;
+    color: #eb4205;
+}
+#fourth_two{
+    /* border: 2px solid black; */
+    height: 30vh;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+#fourth_two>h3{
+    font-size: 30px;
+    font-weight: 800;
+    text-transform:uppercase ;
+}
+#fourth_two>p{
+    text-align: center;
+   /* font-size:15px ; */
+   font-weight: 500;
+   padding: 0px 20px;
+}
+#fourth_three{
+    /* border: 2px solid black; */
+    height: 50vh;
+    display: flex;
+}
+#fourth_three_one{
+    /* border: 2px solid blue; */
+    flex-basis: 40%;
+}
+#fourth_three_one>img{
+    height: 95%;
+    width: 100%;
+    border-radius: 50px;
+    padding: 10px 20px;
+}
+#fourth_three_two{
+    /* border: 2px solid blue; */
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+}
+#fourth_three_two>h2{
+    padding:30px;
+    font-size: 30px;
+    font-weight: 800;
+}
+#fourth_three_two>p{
+    text-align: center;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+/* @FIFTH PAGE STARTS HERE*/
+#fifth_page{
+    /* border: 5px solid black; */
+    height: 75vh;      
+    display: flex;
+}
+#fifth_page_one{
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+#fifth_page_one>h2{
+    /* border: 2px solid blue; */
+    flex-basis: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: "Dancing Script", cursive;
+    color: #eb4205;
+    font-size: 50px;
+    padding-right: 152px;
+    font-weight: 800;
+}
+#fifth_page_one>form{
+    /* border: 2px solid brown; */
+    flex-basis: 85%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+#fifth_page_one>form>input{
+    width: 60%;
+    height: 8%;
+    padding-left: 15px;
+    /* border-radius: 10px; */
+}
+[type=submit]{
+    background-color: #eb4205;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 20px;
+}
+#fifth_page_two{
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+iframe{
+    height: 300px;
+    width: 500px;
+    border-radius: 20px;
+}
+/* $SIXTH PAGE STARTS FROM HERE */
+#sixth_page{
+    /* border: 5px solid black; */
+    height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+#sixth_page_one{
+    /* border: 2px solid red; */
+    flex-basis: 85%;
+    display: flex;
+    background-color: rgb(0, 0, 9);
+    color: white;
+}
+#sixth_page_one_one{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-basis: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-style: italic;
+}
+#sixth_page_one_one>h2{
+    font-family: "Dancing Script", cursive;
+    color: white;
+    font-size: 40px;
+}
+#sixth_page_one_two{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-basis: 30%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+    font-weight: 800;
+    font-style: italic;
+}
+#sixth_page_one_two>h2{
+    font-family: "Dancing Script", cursive;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+#sixth_page_one_two>p{
+    font-size: 15px;
+    font-weight: 400;
+    font-style: italic;
+}
+#sixth_page_one_three{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-basis: 35%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-style: italic;
+}
+#sixth_page_one_three>h2{
+    font-family: "Dancing Script", cursive;
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+#sixth_page_one_three>p{
+  font-size: 15px;
+  font-weight: 400;
+  font-style: italic;
+}
+/* #sixth_page_two{ */
+    /* border: 2px solid red; */
+    /* flex-basis: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(0, 0, 9);
+    color: white; */
+/* } */
+
+#sixth_page_two{
+  height: 15%;
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+   background-color: rgb(0, 0, 9);
+  font-family: "Dancing Script", cursive;
+}
