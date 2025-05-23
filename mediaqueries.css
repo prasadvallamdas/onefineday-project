@@ -1,0 +1,310 @@
+/* Media Queries for Responsiveness */
+
+/* Tablets and smaller desktops */
+@media (max-width: 1300px) {
+    nav {
+        height: auto;
+        flex-direction: row; /* Stack nav items */
+        padding: 10px 0;
+        overflow : hidden;
+    }
+
+    #nav_one,
+    #nav_two,
+    #nav_three {
+        flex-basis: 100%;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    #nav_two {
+        flex-direction: column; /* Stack menu links */
+        gap: 10px;
+    }
+
+    #logo {
+        height: 120px;
+        width: 150px;
+    }
+
+    a {
+        font-size: 17px;
+    }
+
+    #nav_three {
+        flex-direction: row; /* Keep cart items in a row */
+        gap: 20px;
+        position: static; /* Remove absolute positioning */
+        padding: 10px;
+    }
+
+    #cart_items {
+        position: static; /* Remove absolute positioning */
+        margin-left: 10px;
+    }
+
+    #price {
+        font-size: 17px;
+    }
+
+    #menu {
+        font-size: 60px;
+    }
+
+    #article_two,
+    #menu_one,
+    #menu_two,
+    #menu_three,
+    #menu_four {
+        justify-content: center; /* Center cards */
+    }
+
+    .card_container {
+        width: 260px; /* Adjust card width */
+        margin: 20px; /* Adjust margin */
+    }
+
+    #fourth_one > h1 {
+        font-size: 65px;
+    }
+
+    #fourth_two > h3 {
+        font-size: 28px;
+    }
+
+    #fourth_three {
+        flex-direction: column; /* Stack about sections */
+        align-items: center; /* Center stacked sections */
+    }
+
+    #fourth_three_one,
+    #fourth_three_two {
+        flex-basis: 100%; /* Take full width */
+        padding: 10px;
+    }
+
+    #fourth_three_one > img {
+        width: 80%; /* Adjust image width */
+        max-width: 350px; /* Adjust max-width */
+    }
+
+    #fourth_three_two > h2 {
+        padding: 20px 10px;
+        font-size: 28px;
+    }
+
+    #fifth_page {
+        flex-direction: column; /* Stack booking sections */
+        align-items: center; /* Center stacked sections */
+    }
+
+    #fifth_page_one,
+    #fifth_page_two {
+        flex-basis: 100%; /* Take full width */
+        padding: 20px;
+    }
+
+    #fifth_page_one > h2 {
+        font-size: 45px;
+        margin-bottom: 15px;
+    }
+
+    #fifth_page_one > form {
+        max-width: 350px; /* Adjust max-width */
+    }
+
+    iframe {
+        max-width: 450px; /* Adjust max-width */
+    }
+
+    #sixth_page_one {
+        flex-direction: column; /* Stack footer sections */
+        align-items: center; /* Center stacked sections */
+    }
+
+    #sixth_page_one_one,
+    #sixth_page_one_two,
+    #sixth_page_one_three {
+        flex-basis: 100%; /* Take full width */
+        margin: 10px 0;
+    }
+
+    #sixth_page_one_one > h2,
+    #sixth_page_one_two > h2,
+    #sixth_page_one_three > h2 {
+        font-size: 35px;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 900px) {
+    #logo {
+        height: 130px;
+        width: 140px;
+        border: 2px solid red;
+    }
+
+    a {
+        font-size: 15px;
+    }
+
+    #nav_three {
+        gap: 15px;
+    }
+
+    #menu {
+        font-size: 30px;
+    }
+
+    .card_container {
+        width: 30%; /* Make cards wider on smaller screens */
+        margin: 20px 65px; /* Adjust margin */
+    }
+
+    .food_img {
+        height: 120px; /* Adjust image height */
+    }
+
+    .food_title {
+        font-size: 18px;
+    }
+
+    .food_desc {
+        font-size: 14px;
+    }
+
+    .food_price {
+        font-size: 16px;
+    }
+
+    .food_quantity {
+        font-size: 16px;
+    }
+
+    #fourth_one > h1 {
+        font-size: 50px;
+    }
+
+    #fourth_two > h3 {
+        font-size: 22px;
+    }
+
+    #fourth_three_one > img {
+        width: 60%; /* Adjust image width */
+        max-width: 200px; /* Adjust max-width */
+    }
+
+    #fourth_three_two > h2 {
+        font-size: 24px;
+    }
+
+    #fifth_page_one > h2 {
+        font-size: 40px;
+    }
+
+    #fifth_page_one > form {
+        max-width: 300px; /* Adjust max-width */
+    }
+
+    iframe {
+        max-width: 350px; /* Adjust max-width */
+        height: 250px; /* Adjust iframe height */
+    }
+
+    #sixth_page_one_one > h2,
+    #sixth_page_one_two > h2,
+    #sixth_page_one_three > h2 {
+        font-size: 30px;
+    }
+
+    #sixth_page_two {
+        font-size: 12px;
+    }
+}
+
+/* Smaller mobile phones */
+@media (max-width: 700px) {
+    #logo {
+        height: 80px;
+        width: 100px;
+    }
+
+    a {
+        font-size: 13px;
+    }
+
+    #nav_three {
+        gap: 10px;
+    }
+
+    #menu {
+        font-size: 40px;
+    }
+
+    .card_container {
+        width: 95%; /* Make cards take almost full width */
+    }
+
+    .food_img {
+        height: 130px; /* Further reduce image height */
+    }
+    .food_img:hover{
+        scale: 1.08;
+    }
+
+    .food_title {
+        font-size: 20px;
+    }
+
+    .food_desc {
+        font-size: 16px;
+    }
+
+    .food_price {
+        font-size: 16px;
+    }
+
+    .food_quantity {
+        font-size: 16px;
+    }
+
+    #fourth_one > h1 {
+        font-size: 40px;
+    }
+
+    #fourth_two > h3 {
+        font-size: 20px;
+    }
+
+    #fourth_three_one > img {
+        width: 95%; /* Adjust image width */
+        max-width: 250px; /* Adjust max-width */
+    }
+
+    #fourth_three_two > h2 {
+        font-size: 20px;
+    }
+
+    #fifth_page_one > h2 {
+        font-size: 35px;
+    }
+
+    #fifth_page_one > form {
+        max-width: 280px; /* Adjust max-width */
+    }
+
+    iframe {
+        max-width: 300px; /* Adjust max-width */
+        height: 200px; /* Adjust iframe height */
+    }
+
+    #sixth_page_one_one > h2,
+    #sixth_page_one_two > h2,
+    #sixth_page_one_three > h2 {
+        font-size: 25px;
+    }
+
+    #sixth_page_two {
+        font-size: 10px;
+    }
+}
